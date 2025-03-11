@@ -17,6 +17,14 @@ class Program
         job2._startYear = 2018;
         job2._endYear = 2020;
     
-        Console.WriteLine($"{job1._company}\n{job2._company}");
+        job1.Display();
+        job2.Display();
+
+        Resume myResume = new Resume();
+        myResume._name = "Vuyelwa Macanda";
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
+        
+        myResume.Display();
     }
 }

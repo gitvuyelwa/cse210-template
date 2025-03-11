@@ -9,10 +9,7 @@ public class Job
 
     public void Display()
     {
-        Console.WriteLine($"{_jobTitle} at {_company} from {_startYear} to {_endYear}");
-        Job job1 = new Job();
-        job1._company = "BYU-Idaho";
-        job1._jobTitle = "Student Mentor";
+        Console.WriteLine($"{_jobTitle} ({_company}) {_startYear}-{_endYear}");
     }
 }
 
