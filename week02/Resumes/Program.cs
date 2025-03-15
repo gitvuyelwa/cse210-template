@@ -24,7 +24,8 @@ class Program
         myResume._name = "Vuyelwa Macanda";
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
-        
+
         myResume.Display();
+
     }
 }
