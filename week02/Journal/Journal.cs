@@ -13,14 +13,20 @@ class Journal
         {
             entry.Display();
         }
-        
     }
-    public void SaveToFile(file :string)
+    public void LoadFromFile(string file)
     {
-        
+        foreach (Entry entry in _entries)
+        {
+            LoadFromFile(file);
+        }
     }
-    public void LoadFromFile(File :string)
+    
+    public void SaveToFile(string file)
     {
-        
+        foreach (Entry entry in _entries)
+        {
+            SaveToFile(file);
+        }
     }
 }
