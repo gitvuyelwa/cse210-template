@@ -55,5 +55,38 @@ class Program
         entry7._entryText = Console.ReadLine();
         entry7._promptText = "What did you learn about yourself today? ";
 
-        
+        Random random = new Random();
+        {
+            Console.Write("Pick a number between 1 and 7: " );
+            int randomNumber = int.Parse(Console.ReadLine());
+                if (random.Next(1, 8) == 1)
+                {
+                    entry1.Display();
+                }
+                else if (random.Next(1, 8) == 2)
+                {
+                    entry2.Display();
+                }
+                else if (random.Next(1, 8) == 3)
+                {
+                    entry3.Display();
+                }
+                else if (random.Next(1, 8) == 4)
+                {
+                    entry4.Display();
+                }
+                else if (random.Next(1, 8) == 5)
+                {
+                    entry5.Display();
+                }
+                else if (random.Next(1, 8) == 6)
+                {
+                    entry6.Display();
+                }
+                else if (random.Next(1, 8) == 7)
+                {
+                    entry7.Display();
+                }
+            }
+    }   
 }
